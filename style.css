@@ -593,7 +593,8 @@ FONT SIZE SYSTEM (px)
   }
 
   .Swimming-pool {
-    background-image: url(./images/ocean\ image.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+      url(./images/SwimmingPoolUnderVIEW.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -655,7 +656,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .weightlifting {
-    background-image: url(./images/weightlifting\ image.jpg);
+    background-image: url(./images/personDumbbell.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -681,7 +682,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .basketball-court {
-    background-image: url(./images/basketball\ image.jpg);
+    background-image: url(./images/baskballBasketView.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
