@@ -67,12 +67,12 @@ FONT SIZE SYSTEM (px)
   }
 
   .menu-icon {
-    width: 30px;
+    width: 42px;
     stroke: #eee;
   }
 
   .top-section p {
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
     letter-spacing: 1.5px;
   }
@@ -207,14 +207,14 @@ FONT SIZE SYSTEM (px)
   }
 
   .about {
-    font-size: 14px;
+    font-size: 24px;
     color: #211d1d;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     border-color: #211d1d;
   }
 
   .bold {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     font-size: 20px;
   }
 
@@ -223,7 +223,7 @@ FONT SIZE SYSTEM (px)
     background-color: rgb(30, 27, 27);
     border-radius: 50px;
     border: none;
-    font-size: 12px;
+    font-size: 20px;
     color: #eee;
     display: flex;
     justify-content: center;
@@ -246,7 +246,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .Outdoor {
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .first-section_containerII div {
@@ -256,7 +256,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .first-section_containerII div p {
-    font-size: 16px;
+    font-size: 30px;
     color: #eee;
     width: 50%;
   }
@@ -298,11 +298,11 @@ FONT SIZE SYSTEM (px)
   }
 
   .indoor {
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .Futsal {
-    font-size: 18px;
+    font-size: 30px;
     color: #eee;
   }
 
@@ -311,8 +311,8 @@ FONT SIZE SYSTEM (px)
   }
 
   .text-and-icon p {
-    margin-bottom: 16px;
-    font-size: 18px;
+    margin-bottom: 32px;
+    font-size: 24px;
   }
 
   .text-and-icon span {
@@ -358,7 +358,7 @@ FONT SIZE SYSTEM (px)
     display: flex;
     gap: 12px;
     color: #211d1d;
-    font-size: 14px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
   }
@@ -375,6 +375,7 @@ FONT SIZE SYSTEM (px)
     background-color: rgb(114, 200, 234);
     padding: 6px 8px;
     border-radius: 100px;
+    font-size: 18px;
   }
 
   .football-container-sectionII {
@@ -399,9 +400,7 @@ FONT SIZE SYSTEM (px)
   .football-container_text small {
     width: 60%;
     display: inline-block;
-    line-height: 1.5;
-    letter-spacing: -0.7px;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 32px;
   }
 
@@ -496,13 +495,13 @@ FONT SIZE SYSTEM (px)
   }
 
   .facilities {
-    font-size: 14px;
+    font-size: 18px;
     border-color: #211d1d;
     color: #211d1d;
   }
 
   .Explore {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .button-container {
@@ -524,7 +523,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .Faciities-input input {
-    font-size: 10px;
+    font-size: 24px;
     margin-left: 12px;
     background: none;
     border: none;
@@ -555,7 +554,7 @@ FONT SIZE SYSTEM (px)
     justify-content: center;
     align-items: center;
     gap: 4px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .facilities-sections {
@@ -673,12 +672,12 @@ FONT SIZE SYSTEM (px)
   .weight {
     align-self: flex-end;
     font-size: 24px;
-    color: #c7bcbc;
+    color: #eee;
   }
 
   .weightII {
     font-size: 30px;
-    color: #c7bcbc;
+    color: #eee;
   }
 
   .basketball-court {
@@ -727,7 +726,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .facilities-icon p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   svg {
@@ -739,7 +738,7 @@ FONT SIZE SYSTEM (px)
   .testimony-hide {
     border-color: #211d1d;
     color: #211d1d;
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 24px;
   }
 
@@ -751,7 +750,7 @@ FONT SIZE SYSTEM (px)
   }
 
   .fourtI p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .testimony {
