@@ -1,982 +1,965 @@
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 /192
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media (max-width: 679px) {
-  body {
-    font-family: sans-serif;
-    background-color: #f3f3f3;
-    width: fit-content;
-  }
-
-  header,
-  section {
-    margin-bottom: 96px;
-  }
-
-  main,
-  footer {
-    padding: 0px 24px;
-  }
-
-  .button-like-text {
-    color: #eee;
-    background-color: transparent;
-    border-radius: 100px;
-    padding: 4px 12px;
-    border: 1.7px solid white;
-    /* margin-bottom: 24px; */
-    width: fit-content;
-  }
-  header {
-    background-image: linear-gradient(
-        rgba(54, 4, 4, 0.3),
-        rgba(33, 29, 29, 0.7)
-      ),
-      url(./images/header-image.jpg);
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 12px;
-    color: #eee;
-  }
-
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .top-section nav ul {
-    display: none;
-  }
-
-  .menu-icon {
-    width: 42px;
-    stroke: #eee;
-  }
-
-  .top-section p {
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 1.5px;
-  }
-
-  .nav-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .button-box {
-    background-color: rgba(238, 238, 238, 0.337);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 8px 24px;
-  }
-
-  .button-box input {
-    font-size: 12px;
-    width: 64px;
-    background: none;
-    border: none;
-    border-radius: 10px;
-    padding: 0;
-    outline: none;
-  }
-
-  .search-icon {
-    width: 16px;
-  }
-
-  .nav-button input::placeholder {
-    color: #eee;
-  }
-
-  .nav-button button {
-    padding: 8px 12px;
-    background-color: rgb(30, 27, 27);
-    border-radius: 50px;
-    border: none;
-    font-size: 12px;
-    width: 100%;
-    color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .arrow-up {
-    width: 16px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  /* BOTTOM SECTION  */
-
-  .bottom-section {
-    display: flex;
-    align-items: center;
-    color: #eee;
-    justify-content: space-between;
-  }
-
-  .bottom-header-div {
-    width: 60%;
-  }
-
-  .bottom-header-div button {
-    margin-bottom: 12px;
-    border-radius: 50px;
-    padding: 4px 12px;
-    background-color: transparent;
-    border: 1px #eee solid;
-    color: #eee;
-  }
-
-  .Sportscenter {
-    margin-bottom: 12px;
-  }
-
-  .bottom-header-div h1 {
-    font-size: 32px;
-    color: #eee;
-    font-family: serif;
-    line-height: 1.1;
-    letter-spacing: -2px;
-  }
-
-  .bottom-section aside {
-    width: 30%;
-  }
-
-  .group-image {
-    background-color: rgba(209, 204, 204, 0.509);
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    text-align: center;
-    padding: 4px;
-    border-radius: 50px;
-    margin-bottom: 8px;
-  }
-
-  .bottom-section aside small {
-    font-size: 10px;
-    line-height: -0.5;
-    letter-spacing: 0.5px;
-  }
-
-  .bottom-section aside img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-  }
-
-  /* FIRST SECTION */
-
-  .first-section {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    width: 100%;
-  }
-
-  .about-container {
-    margin-bottom: 48px;
-  }
-
-  .about {
-    font-size: 24px;
-    color: #211d1d;
-    margin-bottom: 24px;
-    border-color: #211d1d;
-  }
-
-  .bold {
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-
-  .get-in-touch {
-    padding: 8px 24px;
-    background-color: rgb(30, 27, 27);
-    border-radius: 50px;
-    border: none;
-    font-size: 20px;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .first-section_containerII {
-    background-image: linear-gradient(rgba(74, 70, 70, 0.5), rgba(0, 0, 0, 0)),
-      url("./images/ppl\ on\ field.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 12px;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 192px;
-    margin-bottom: 48px;
-  }
-
-  .Outdoor {
-    font-size: 24px;
-  }
-
-  .first-section_containerII div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .first-section_containerII div p {
-    font-size: 30px;
-    color: #eee;
-    width: 50%;
-  }
-
-  .first-section_containerII div button {
-    height: fit-content;
-    padding: 14px 16px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100px;
-    border: none;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .first-section_containerII div svg {
-    width: 18px;
-  }
-
-  .first-section_containerIII {
-    margin-bottom: 24px;
-
-    padding: 0 32px;
-  }
-
-  .containerIII-firstsection {
-    background-image: url(./images/replace\ holding\ ball\ above\ the\ head.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 192px;
-    padding: 16px;
-    border-radius: 16px;
-    margin-bottom: 32px;
-  }
-
-  .indoor {
-    font-size: 24px;
-  }
-
-  .Futsal {
-    font-size: 30px;
-    color: #eee;
-  }
-
-  .text-and-icon {
-    padding-left: 16px;
-  }
-
-  .text-and-icon p {
-    margin-bottom: 32px;
-    font-size: 24px;
-  }
-
-  .text-and-icon span {
-    height: fit-content;
-    display: inline-block;
-  }
-
-  .text-and-icon span svg {
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    border-radius: 100px;
-    border: 1px solid #211d1d;
-    stroke-width: 2;
-  }
-
-  /* SECOND SECTION */
-
-  .second-section {
-    padding: 8px;
-    width: fit-content;
-  }
-
-  article {
-    margin-bottom: 48px;
-  }
-
-  .football-container-sectionI {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-
-  .football-container-sectionI span {
-    background-color: #ddd8d8;
-    border-radius: 100%;
-    padding: 10px;
-  }
-
-  .football-container-sectionI div {
-    display: flex;
-    gap: 12px;
-    color: #211d1d;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Competition,
-  .Friendly {
-    border-radius: 100px;
-    border: 1.7px solid #211d1d;
-    padding: 4px 8px;
-  }
-
-  .training {
-    color: #eee;
-    background-color: rgb(114, 200, 234);
-    padding: 6px 8px;
-    border-radius: 100px;
-    font-size: 18px;
-  }
-
-  .football-container-sectionII {
-    background-color: #211d1d;
-    padding: 16px;
-    border-radius: 16px;
-    color: rgb(255, 255, 255);
-  }
-
-  .football-container-sectionII img {
-    width: 100%;
-    margin-bottom: 32px;
-    min-height: 200px;
-    border-radius: 16px;
-  }
-
-  .football-container_text p {
-    font-size: 36px;
-    margin-bottom: 32px;
-  }
-
-  .football-container_text small {
-    width: 60%;
-    display: inline-block;
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
-
-  .football-container_text button {
-    color: #eee;
-    padding: 8px 16px;
-    border-radius: 50px;
-    border: 1px solid #eee;
-
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    font-size: 18px;
-    margin-bottom: 10rem;
-  }
-
-  .football-container_text div {
-    width: fit-content;
-  }
-
-  .football-container_text div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #eee;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #eee;
-  }
-
-  /* GOLF CONTAINER */
-
-  .golf-container h2 {
-    font-size: 44px;
-    font-weight: 100;
-    color: #211d1d;
-    margin-bottom: 32px;
-  }
-
-  .golf-details {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    position: relative;
-  }
-
-  .golf-details img {
-    width: 50%;
-    border-radius: 16px;
-    min-height: 200px;
-  }
-
-  .golf-details button {
-    position: absolute;
-    top: 70px;
-    left: -24px;
-    background-color: #211d1d;
-    padding: 15px;
-    border-radius: 100px;
-    border: none;
-  }
-
-  .golf-text {
-    font-size: 14px;
-    color: #211d1d;
-  }
-
-  /* THIRD SECTION */
-
-  .third-section {
-    background-color: rgb(255, 255, 255);
-    padding: 32px 16px;
-    border-radius: 8px;
-    width: 100%;
-  }
-
-  .Faciities-container {
-    margin-bottom: 48px;
-    width: 100%;
-  }
-
-  .explore-facilities {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    align-items: center;
-    /* background-color: blue; */
-    margin-bottom: 48px;
-    text-align: center;
-  }
-
-  .facilities {
-    font-size: 18px;
-    border-color: #211d1d;
-    color: #211d1d;
-  }
-
-  .Explore {
-    font-size: 36px;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    text-align: center;
-  }
-
-  .Faciities-input {
-    background-color: #f3f3f3;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    padding: 4px 8px;
-  }
-
-  .Faciities-input input {
-    font-size: 24px;
-    margin-left: 12px;
-    background: none;
-    border: none;
-    outline: none;
-  }
-
-  .Faciities-input svg {
-    width: 32px;
-    stroke: #000;
-    background-color: rgb(255, 255, 255);
-    padding: 4px;
-    margin-right: 5px;
-    border-radius: 50px;
-  }
-
-  .Faciities-container input::placeholder {
-    color: #c2bdbd;
-    font-size: 14px;
-  }
-
-  .Faciities-container button {
-    padding: 8px 16px;
-    border-radius: 50px;
-    border: none;
-    background-color: #211d1d;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    font-size: 20px;
-  }
-
-  .facilities-sections {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Tennis-court {
-    background-image: url(./images/header-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25rem;
-    width: 100%;
-    padding: 10px;
-    border-radius: 16px;
-    width: 100%;
-    margin-bottom: 48px;
-  }
-
-  .tennis {
-    align-self: flex-end;
-    font-size: 24px;
-  }
-
-  .tennisII {
-    color: white;
-    font-size: 30px;
-  }
-
-  .Swimming-pool {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
-      url(./images/SwimmingPoolUnderVIEW.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25rem;
-    width: 100%;
-    padding: 10px;
-    border-radius: 16px;
-    margin-bottom: 48px;
-  }
-
-  .swim {
-    align-self: flex-end;
-    font-size: 24px;
-  }
-
-  .swim-bottom {
-    background-color: rgba(136, 180, 203, 0.181);
-    padding: 12px 24px;
-    border-radius: 16px;
-  }
-
-  .heat {
-    font-size: 20px;
-    margin-bottom: 16px;
-    padding: 8px 16px;
-  }
-
-  .dive-button {
-    display: flex;
-    width: fit-content;
-    justify-content: space-between;
-    gap: 52px;
-    align-items: center;
-  }
-
-  .dive-button p {
-    color: #eee;
-    font-size: 30px;
-  }
-
-  .dive-button button {
-    height: fit-content;
-    padding: 12px 12px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pool {
-    stroke-width: 2;
-    width: 24px;
-    stroke: #eee;
-  }
-
-  .weightlifting {
-    background-image: url(./images/personDumbbell.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25rem;
-    width: 100%;
-    padding: 10px;
-    border-radius: 16px;
-    margin-bottom: 48px;
-  }
-
-  .weight {
-    align-self: flex-end;
-    font-size: 24px;
-    color: #eee;
-  }
-
-  .weightII {
-    font-size: 30px;
-    color: #eee;
-  }
-
-  .basketball-court {
-    background-image: url(./images/baskballBasketView.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25rem;
-    width: 100%;
-    padding: 10px;
-    border-radius: 16px;
-    margin-bottom: 48px;
-  }
-
-  .basket {
-    align-self: flex-end;
-    font-size: 24px;
-  }
-
-  .basketII {
-    font-size: 30px;
-    color: #eee;
-  }
-
-  .facilities-icon {
-    width: 100%;
-    gap: 24px;
-  }
-
-  .facilities-icon div {
-    width: fit-content;
-    margin-bottom: 32px;
-  }
-
-  .facilities-icon div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #211d1d;
-  }
-
-  .facilities-icon p {
-    font-size: 24px;
-  }
-
-  svg {
-    width: 24px;
-  }
-
-  /* FOURTH SECTION */
-
-  .testimony-hide {
-    border-color: #211d1d;
-    color: #211d1d;
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-
-  .fourtI {
-    display: flex;
-    margin-bottom: 24px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .fourtI p {
-    font-size: 18px;
-  }
-
-  .testimony {
-    display: none;
-  }
-
-  .testimonyI {
-    color: #eee;
-    background-color: #211d1d;
-    padding: 8px 12px;
-    border-radius: 100px;
-  }
-
-  .fourtI div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #211d1d;
-  }
-
-  .testimonial-text-img {
-    background: url(./images/testimonial6.avif);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    min-height: 100dvh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* align-items: center; */
-    padding: 16px;
-    border-radius: 8px;
-    margin-bottom: 32px;
-  }
-
-  .fourth-section img {
-    display: none;
-  }
-
-  .testimonial-text-img div {
-    gap: 24px;
-    width: 50%;
-    background-color: rgba(170, 166, 166, 0.2);
-    padding: 24px 12px;
-  }
-
-  .testimonial-text-img blockquote {
-    font-size: 24px;
-    /* width: 50%; */
-    font-family: serif;
-    margin-bottom: 24px;
-  }
-
-  .testimonial-author {
-    font-size: 18px;
-    width: fit-content;
-  }
-  .testimonial-author span {
-    color: rgb(27, 60, 125);
-    font-weight: 500;
-  }
-
-  /* FIFTH SECTION */
-
-  .fifth-section {
-    background-color: #211d1d;
-    padding: 16px;
-    border-radius: 16px;
-  }
-
-  .fifth-section img {
-    border-radius: 12px;
-    margin-bottom: 32px;
-  }
-
-  .subscribe-newsletter {
-    margin-bottom: 24px;
-  }
-
-  .subscribe-button {
-    padding: 8px 16px;
-    color: #eee;
-    background-color: #211d1d;
-    border-radius: 50px;
-    border: 1px solid #eee;
-    margin-right: 12px;
-    font-size: 16px;
-  }
-
-  .newsletter {
-    padding: 8px 16px;
-    color: #211d1d;
-    background-color: #eee;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-  }
-
-  .subscribe-text {
-    font-size: 36px;
-    margin-bottom: 12px;
-    color: #eee;
-    font-weight: 100;
-    margin-bottom: 32px;
-  }
-
-  .subscribe-input {
-    padding: 8px 16px;
-    border-radius: 50px;
-    background-color: rgba(235, 220, 220, 0.099);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-  }
-
-  .subscribe-input input {
-    border: none;
-    background: none;
-    outline: none;
-    width: 50%;
-  }
-
-  .subscribe-input input::placeholder {
-    color: #a8a2a2;
-  }
-
-  .send-icon {
-    width: 26px;
-    stroke: none;
-    fill: #eee;
-    background-color: rgb(115, 182, 211);
-    border-radius: 100px;
-    padding: 3px;
-  }
-
-  /* FOOTER */
-
-  footer {
-    background-color: rgb(115, 182, 211);
-    padding-top: 32px;
-    width: 100%;
-  }
-
-  footer section {
-    margin-bottom: 0;
-  }
-
-  .footer_top-section {
-    border-bottom: 1px solid rgba(33, 29, 29, 0.386);
-    padding-bottom: 32px;
-  }
-
-  .advert-text {
-    font-size: 30px;
-    color: #211d1d;
-    margin-bottom: 24px;
-  }
-
-  .footer-Louvre {
-    padding: 4px 12px;
-    color: #211d1d;
-    background-color: #eee;
-    border-radius: 50px;
-    border: none;
-    margin-bottom: 48px;
-    width: fit-content;
-    font-size: 12px;
-  }
-
-  .page-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-  }
-
-  ul {
-    list-style: none;
-    color: #211d1d;
-  }
-
-  .page-details p {
-    font-size: 24px;
-    color: #211d1d;
-    margin-bottom: 12px;
-  }
-
-  .page-details li {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .page-details li:last-child {
-    margin-bottom: 0;
-  }
-
-  .social a:link,
-  a:visited {
-    color: #211d1d;
-    text-decoration: none;
-  }
-
-  .social li {
-    background-color: transparent;
-    border: 1px solid #716464;
-    border-radius: 50px;
-    padding: 4px 12px;
-  }
-
-  .footer_bottom-section {
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 12px;
-    font-size: 14px;
-    color: #211d1d;
-  }
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-image: linear-gradient(rgba(54, 4, 4, 0.3), rgba(33, 29, 29, 0.7)),
+    url(./images/header-image.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0.95rem;
+  color: #eee;
+  width: fit-content;
+  min-height: 50dvh;
+  margin-bottom: 1.5rem;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.top-section nav ul {
+  display: none;
+}
+
+.top-section button {
+  background: none;
+  border: none;
+}
+
+.menu-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  stroke: #eee;
+}
+
+.top-section p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.nav-button {
+  display: none;
+}
+
+.button-box {
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 3.125rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.button-box input {
+  width: 7.1875rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: #000;
+  padding: 0.25rem;
+  background-color: #eee;
+  border-radius: 100%;
+}
+
+.search-icon:hover {
+  stroke: #eee;
+  background-color: #000;
+}
+
+.nav-button input::placeholder {
+  color: #eee;
+}
+
+.nav-button button {
+  padding: 0.5rem;
+  background-color: rgb(30, 27, 27);
+  border-radius: 3.125rem;
+  border: none;
+  width: 100%;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.arrow-up {
+  width: 1rem;
+}
+
+header p {
+  font-size: 0.875rem;
+}
+
+/* BOTTOM SECTION  */
+.bottom-section {
+  display: flex;
+  align-items: center;
+  color: #eee;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.button-like-text {
+  color: #eee;
+  background-color: transparent;
+  border-radius: 6.25rem;
+  padding: 0.25rem 0.75rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+  width: fit-content;
+}
+
+.Sportscenter {
+  margin-bottom: 1rem;
+}
+
+.bottom-header-div h1 {
+  font-size: 1.625rem;
+  color: #eee;
+  font-family: sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.0625rem;
+  font-weight: 500;
+}
+
+.bottom-section aside {
+  width: 30%;
+}
+
+.group-image {
+  background-color: rgba(209, 204, 204, 0.3);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 3.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.bottom-section aside img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.bottom-section aside small {
+  font-size: 0.625rem;
+}
+
+/* FIRST SECTION */
+main {
+  width: 100%;
+  padding: 1rem;
+}
+
+.first-section {
+  border-bottom: 0.1875rem solid #fff;
+}
+
+.about-container {
+  margin-bottom: 3rem;
+}
+
+.about {
+  color: #211d1d;
+  margin-bottom: 1.5rem;
+  border-color: #211d1d;
+}
+
+.bold {
+  margin-bottom: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.get-in-touch {
+  padding: 0.5rem 1rem;
+  background-color: rgb(30, 27, 27);
+  border-radius: 3.125rem;
+  border: none;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.first-section_containerII {
+  background-image: linear-gradient(rgba(74, 70, 70, 0.5), rgba(0, 0, 0, 0)),
+    url("./images/ppl\ on\ field.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  margin-bottom: 3rem;
+}
+
+.Outdoor {
+  font-size: 1.25rem;
+}
+
+.first-section_containerII div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-section_containerII div p {
+  font-size: 1.5rem;
+  color: #eee;
+  width: 15.625rem;
+}
+
+.first-section_containerII div button {
+  height: fit-content;
+  padding: 0.625rem 0.875rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 6.25rem;
+  border: none;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section_containerII div svg {
+  width: 1.25rem;
+}
+
+.first-section_containerIII {
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+}
+
+.containerIII-firstsection {
+  background-image: url(./images/replace\ holding\ ball\ above\ the\ head.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.indoor {
+  font-size: 1.25rem;
+}
+
+.Futsal {
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.text-and-icon {
+  padding-left: 1rem;
+}
+
+.text-and-icon p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.text-and-icon button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 0.0625rem solid #2a2626d4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-and-icon span svg {
+  width: 2.75rem;
+  stroke: #2a2626;
+  border-radius: 6.25rem;
+  border: 0.0625rem solid #211d1d;
+  stroke-width: 2;
+}
+
+/* SECOND SECTION */
+
+.second-section {
+  width: fit-content;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+.football-container-sectionI {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.football-container-sectionI span {
+  background-color: #ddd8d8;
+  border-radius: 100%;
+  padding: 0.625rem;
+}
+
+.football-container-sectionI div {
+  display: flex;
+  gap: 0.75rem;
+  color: #211d1d;
+  justify-content: center;
+  align-items: center;
+}
+
+.Competition,
+.Friendly {
+  border-radius: 6.25rem;
+  border: 0.0625rem solid #211d1d;
+  padding: 0.25rem 0.5rem;
+}
+
+.training {
+  color: #eee;
+  background-color: rgb(114, 200, 234);
+  padding: 0.375rem 0.5rem;
+  border-radius: 6.25rem;
+  font-size: 1.125rem;
+}
+
+.football-container-sectionII {
+  background-color: #211d1d;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.football-container-sectionII img {
+  width: 100%;
+  margin-bottom: 2rem;
+  min-height: 12.5rem;
+  border-radius: 1rem;
+}
+
+.football-container_text p {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.football-container_text small {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.book {
+  color: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 3.125rem;
+  border: 0.0625rem solid #eee;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  margin-bottom: 7rem;
+}
+
+
+.football-container_text div button {
+  background: none;
+  border: 0.0625rem solid #fff;
+  border-radius: 3.125rem;
+  padding: 0.75rem 0.25rem;
+}
+
+.football-container_text div svg {
+  background-color: transparent;
+  width: 2.75rem;
+  stroke: #eee;
+}
+
+/* GOLF CONTAINER */
+
+.golf-container h2 {
+  font-size: 2.75rem;
+  font-weight: 100;
+  color: #211d1d;
+  margin-bottom: 2rem;
+}
+
+.golf-details {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.golf-details img {
+  width: 50%;
+  border-radius: 1rem;
+  min-height: 12.5rem;
+}
+
+.golf-details button {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #211d1d;
+  padding: 0.9375rem;
+  border-radius: 6.25rem;
+  border: none;
+}
+
+.golf-text {
+  font-size: 0.875rem;
+  color: #585353;
+  line-height: 1.5;
+}
+
+/* THIRD SECTION */
+
+.third-section {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.Faciities-container {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.explore-facilities {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.facilities {
+  font-size: 0.75rem;
+  border-color: #211d1d;
+  color: #211d1d;
+}
+
+.Explore {
+  font-size: 1.625rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.Faciities-input {
+  background-color: #f3f3f3;
+  border-radius: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 0.125rem 0 0.125rem 0.75rem;
+}
+
+.Faciities-input input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.Faciities-input button {
+  border-radius: 6.25rem;
+  background: #fff;
+  padding: 0.5rem 0.125rem;
+  border: none;
+}
+
+.Faciities-input svg {
+  width: 2.75rem;
+  stroke: #000;
+}
+
+.Faciities-container input::placeholder {
+  color: #c2bdbd;
+  font-size: 0.875rem;
+}
+
+.viewall {
+  padding: 1rem;
+  border-radius: 3.125rem;
+  border: none;
+  background-color: #211d1d;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.facilities-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Tennis-court {
+  background-image: url(./images/header-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20rem;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.tennis {
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+
+.tennisII {
+  color: white;
+  font-size: 1.875rem;
+}
+
+.Swimming-pool {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(./images/SwimmingPoolUnderVIEW.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20rem;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.swim {
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+
+.swim-bottom {
+  background-color: rgba(136, 180, 203, 0.181);
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.heat {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.dive-button {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  gap: 3.25rem;
+  align-items: center;
+}
+
+.dive-button p {
+  color: #eee;
+  font-size: 1.875rem;
+}
+
+.dive-button button {
+  height: fit-content;
+  padding: 0.75rem 0.75rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 6.25rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pool {
+  stroke-width: 2;
+  width: 1.5rem;
+  stroke: #eee;
+}
+
+.weightlifting {
+  background-image: url(./images/personDumbbell.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20rem;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.weight {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.weightII {
+  font-size: 1.875rem;
+  color: #eee;
+}
+
+.basketball-court {
+  background-image: url(./images/baskballBasketView.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20rem;
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.basket {
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+
+.basketII {
+  font-size: 1.875rem;
+  color: #eee;
+}
+
+
+.facilities-icon div {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.facilities-icon div button {
+  background-color: transparent;
+  padding: 0.5rem 0.75rem;
+  width: 2.75rem;
+  stroke: #211d1d;
+  border-radius: 100%;
+  border: 0.0625rem solid #211d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facilities-icon p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* FOURTH SECTION */
+
+.testimony-hide {
+  border-color: #211d1d;
+  color: #211d1d;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.fourtI {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimony {
+  display: none;
+}
+
+.testimonyI {
+  color: #eee;
+  background-color: #211d1d;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6.25rem;
+}
+
+.fourtI div button {
+  stroke: #211d1d;
+  padding: 0.75rem 0.25rem;
+  background: none;
+  border-radius: 100%;
+  border: 0.0625rem solid #9a9797;
+}
+
+.fourtI div svg {
+  width: 2.75rem;
+  stroke: #211d1d;
+}
+
+.testimonial-text-img {
+  background: url(./images/testimonial6.avif);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  min-height: 50dvh;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fourth-section img {
+  display: none;
+}
+
+.testimonial-text-img div {
+  gap: 1.5rem;
+  width: 50%;
+  background-color: rgba(170, 166, 166, 0.2);
+  padding: 1.5rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonial-text-img blockquote {
+  font-size: 1.25rem;
+  font-family: serif;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author span {
+  color: rgb(27, 60, 125);
+  font-weight: 500;
+}
+
+/* FIFTH SECTION */
+
+.fifth-section {
+  background-color: #211d1d;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.fifth-section img {
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.subscribe-newsletter {
+  margin-bottom: 1.5rem;
+}
+
+.subscribe-button {
+  padding: 0.5rem 1rem;
+  color: #eee;
+  background-color: #211d1d;
+  border-radius: 3.125rem;
+  border: 0.0625rem solid #eee;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+}
+
+.newsletter {
+  padding: 0.5rem 1rem;
+  color: #211d1d;
+  background-color: #eee;
+  border-radius: 3.125rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.subscribe-text {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  color: #eee;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.subscribe-input {
+  padding: 0.5rem 1rem;
+  border-radius: 3.125rem;
+  background-color: rgba(235, 220, 220, 0.099);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.subscribe-input input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 50%;
+}
+
+.subscribe-input input::placeholder {
+  color: #a8a2a2;
+}
+
+.send-icon {
+  width: 1.625rem;
+  stroke: none;
+  fill: #eee;
+  background-color: rgb(115, 182, 211);
+  border-radius: 6.25rem;
+  padding: 0.1875rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(115, 182, 211);
+  padding: 2rem 1rem;
+  width: 100%;
+  min-width: fit-content;
+}
+
+footer section {
+  margin-bottom: 0;
+}
+
+.footer_top-section {
+  border-bottom: 0.0625rem solid rgba(33, 29, 29, 0.386);
+  padding-bottom: 2rem;
+}
+
+.advert-text {
+  font-size: 1.875rem;
+  color: #211d1d;
+  margin-bottom: 1.5rem;
+}
+
+.footer-Louvre {
+  padding: 0.25rem 0.75rem;
+  color: #211d1d;
+  background-color: #eee;
+  border-radius: 3.125rem;
+  border: none;
+  margin-bottom: 3rem;
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
+.page-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+ul {
+  list-style: none;
+  color: #211d1d;
+}
+
+.page-details p {
+  font-size: 1.5rem;
+  color: #211d1d;
+  margin-bottom: 0.75rem;
+}
+
+.page-details li {
+  margin-bottom: 0.5rem;
+}
+
+.page-details li:last-child {
+  margin-bottom: 0;
+}
+
+.social a:link,
+a:visited {
+  color: #211d1d;
+  text-decoration: none;
+}
+
+.social li {
+  background-color: transparent;
+  border: 0.0625rem solid #eee3e394;
+  border-radius: 3.125rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.footer_bottom-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #211d1d;
 }
 
 /*
   DESKTOP VIEW
  */
-@media (min-width: 680px) {
+
+@media (min-width: 42.1875rem) {
   body {
     font-family: sans-serif;
     background-color: #f3f3f3;
@@ -985,53 +968,30 @@ FONT SIZE SYSTEM (px)
 
   header,
   section {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
+  }
+
+  header {
+    min-height: 80vh;
+    width: 100%;
+    gap: 12rem;
+    padding: 0.95rem;
+    color: #eee;
   }
 
   main,
   footer {
-    padding: 0px 24px;
-  }
-
-  .button-like-text {
-    color: #eee;
-    background-color: transparent;
-    border-radius: 100px;
-    padding: 4px 12px;
-    border: 1.7px solid white;
-    width: fit-content;
-  }
-
-  header {
-    background-image: linear-gradient(
-        rgba(54, 4, 4, 0.3),
-        rgba(33, 29, 29, 0.7)
-      ),
-      url(./images/header-image.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
-    padding: 12px 24px 32px 24px;
-    color: #eee;
-  }
-
-  .top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0rem 1.5rem;
   }
 
   .top-section nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    padding: 8px;
-    gap: 8px;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    color: #eee;
   }
 
   .top-section nav li:hover,
@@ -1043,54 +1003,40 @@ FONT SIZE SYSTEM (px)
   .menu-icon {
     display: none;
   }
-
   .top-section p {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.875rem;
   }
 
   .nav-button {
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 10px;
-  }
-
-  .nav-button input::placeholder {
-    color: rgba(238, 238, 238, 0.75);
+    gap: 0.625rem;
   }
 
   .button-box {
     background-color: rgba(238, 238, 238, 0.3);
     width: 100%;
-    padding: 6px 4px;
-    border-radius: 100px;
+    padding: 0.25rem 0 0.25rem 0.375rem;
+    border-radius: 6.25rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 0;
   }
 
   .button-box input {
-    font-size: 14px;
-    width: 50%;
     background: none;
     border: none;
   }
 
-  .search-icon {
-    background-color: #eee;
-    border-radius: 100%;
-    width: 24px;
-    padding: 4px;
-    stroke: #211d1d;
-  }
-
   .nav-button button {
-    padding: 12px 8px;
+    padding: 0.25rem 0.125rem;
     background-color: rgb(30, 27, 27);
-    border-radius: 100px;
+    border-radius: 6.25rem;
     border: none;
-    width: 50%;
+    width: 100%;
     color: #eee;
     display: flex;
     align-items: center;
@@ -1098,52 +1044,31 @@ FONT SIZE SYSTEM (px)
   }
 
   .arrow-up {
-    width: 14px;
+    width: 0.875rem;
     stroke: #eee;
   }
 
   header p {
-    font-size: 16px;
-    width: fit-content;
-  }
-
-  .bottom-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .Sportscenter {
-    margin-bottom: 12px;
-  }
-
-  .bottom-section aside {
-    width: 20%;
+    font-size: 1.5rem;
   }
 
   .bottom-section h1 {
-    font-size: 44px;
-    width: 50%;
+    font-size: 3.25rem;
+    width: 80%;
     line-height: 1.1;
-    letter-spacing: -2px;
+    letter-spacing: -0.125rem;
     font-weight: 200;
     font-family: serif;
   }
 
-  .group-image {
-    background-color: rgba(209, 204, 204, 0.509);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    padding: 2px;
-    border-radius: 100px;
+  .bottom-section aside img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
   }
 
-  .bottom-section aside img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+  .bottom-section aside small {
+    font-size: 1.125rem;
   }
 
   /* FIRST SECTION */
@@ -1152,144 +1077,18 @@ FONT SIZE SYSTEM (px)
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch;
-    gap: 48px;
-    padding: 48px 4px;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    width: 100%;
+    gap: 3rem;
+    padding: 3rem 0.25rem;
   }
 
   .about-container {
     height: fit-content;
-    margin-top: 12px;
-    padding: 16px;
-  }
-
-  .about {
-    font-size: 12px;
-    color: #211d1d;
-    margin-bottom: 16px;
-    border-color: #211d1d;
-  }
-
-  .bold {
-    margin-bottom: 48px;
-    font-size: 18px;
-  }
-
-  .get-in-touch {
-    padding: 8px 24px;
-    background-color: rgb(30, 27, 27);
-    width: fit-content;
-    border-radius: 50px;
-    border: none;
-    font-size: 12px;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    margin-top: 0.75rem;
+    padding: 1rem;
   }
 
   .first-section_containerII {
-    background-image: linear-gradient(rgba(74, 70, 70, 0.4), rgba(0, 0, 0, 0)),
-      url("./images/ppl\ on\ field.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 24px;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .Outdoor {
-    font-size: 12px;
-    /* color: #3e3a3a; */
-  }
-
-  .first-section_containerII div {
-    display: flex;
-    gap: 64px;
-    align-items: center;
-  }
-
-  .first-section_containerII div p {
-    font-size: 24px;
-    color: #eee;
-    width: 70%;
-  }
-
-  .first-section_containerII div button {
-    height: fit-content;
-    padding: 14px 16px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100px;
-    border: none;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .first-section_containerII div svg {
-    width: 18px;
-  }
-
-  .first-section_containerIII {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 32px;
-  }
-
-  .containerIII-firstsection {
-    background-image: url(./images/replace\ holding\ ball\ above\ the\ head.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
-    padding: 16px;
-    border-radius: 16px;
-    margin-bottom: 16px;
-  }
-
-  .indoor {
-    font-size: 12px;
-  }
-
-  .Futsal {
-    font-size: 18px;
-    color: #eee;
-  }
-
-  .text-and-icon {
-    padding: 12px;
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-  }
-
-  .text-and-icon p {
-    font-size: 14px;
-    width: 50%;
-  }
-
-  .text-and-icon span {
-    height: fit-content;
-  }
-
-  .text-and-icon span svg {
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    stroke-width: 2;
-
-    border-radius: 100px;
-    border: 1px solid #211d1d;
+    gap: 20rem;
   }
 
   /* SECOND SECTION */
@@ -1298,229 +1097,88 @@ FONT SIZE SYSTEM (px)
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
-    column-gap: 80px;
-    margin-bottom: 64px;
-    padding: 8px;
-  }
-
-  .football-container-sectionI {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 48px;
-  }
-
-  .football-container-sectionI span {
-    background-color: #ddd8d8;
-    border-radius: 100%;
-    padding: 10px;
-  }
-  .football-container-sectionI div {
-    display: flex;
-    gap: 12px;
-    color: #211d1d;
-    font-size: 12px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Competition,
-  .Friendly {
-    border-radius: 100px;
-    border: 1.7px solid #211d1d;
-    padding: 4px 8px;
-  }
-
-  .training {
-    color: #eee;
-    background-color: rgb(114, 200, 234);
-    padding: 6px 8px;
-    border-radius: 100px;
+    column-gap: 5rem;
+    margin-bottom: 4rem;
+    padding: 0.5rem;
   }
 
   .football-container-sectionII {
-    background-color: #211d1d;
     display: flex;
-    padding: 8px;
-    gap: 24px;
-    border-radius: 16px;
-    color: #eee;
+    gap: 1.5rem;
+    width: fit-content;
   }
 
   .football-container-sectionII img {
     width: 40%;
-    min-height: 300px;
-    border-radius: 16px;
+    border-radius: 1rem;
+    margin-bottom: 0;
   }
 
-  .football-container_text {
-    margin-top: 12px;
-  }
-
-  .football-container_text p {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-
-  .football-container_text small {
-    width: 60%;
-    display: inline-block;
-    line-height: 1.5;
-    letter-spacing: -0.7px;
-    font-size: 12px;
-    margin-bottom: 24px;
-  }
-
-  .football-container_text button {
-    color: #eee;
-    padding: 8px 16px;
-    border-radius: 50px;
-    border: 1px solid #eee;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 48px;
-  }
-
-  .football-container_text div {
-    width: fit-content;
-  }
-
-  .football-container_text div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #eee;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #eee;
-  }
 
   /* GOLF CONTAINER */
 
   .golf-container h2 {
-    font-size: 44px;
-    font-weight: 100;
-    color: #211d1d;
-    margin-bottom: 96px;
-  }
-
-  .golf-details {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    position: relative;
-  }
-
-  .golf-details img {
-    width: 40%;
-    border-radius: 16px;
-    min-height: 195px;
-  }
-
-  .golf-details button {
-    position: absolute;
-    top: 70px;
-    left: -24px;
-    background-color: #211d1d;
-    padding: 15px;
-    border-radius: 100px;
-    border: none;
+    margin-bottom: 6rem;
   }
 
   .golf-text {
-    font-size: 12px;
-    color: #211d1d;
+    font-size: 1.25rem;
   }
 
   /* THIRD CONTAINER */
 
   .third-section {
-    display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    padding: 48px 32px;
-    border-radius: 8px;
-    width: 100%;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
   }
 
   .Faciities-container {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
-    margin-bottom: 64px;
   }
 
   .explore-facilities {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    align-items: center;
+    margin-bottom: 0rem;
+    text-align: center;
   }
 
   .facilities {
-    color: #211d1d;
-    border: 1.7px solid #211d1d;
-    font-size: 10px;
+    font-size: 1.125rem;
   }
 
   .Explore {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .button-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
-    width: fit-content;
   }
 
   .Faciities-input {
-    background-color: #f3f3f3;
-    border-radius: 50px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    padding: 4px 0;
+    padding-left: 0.25rem;
   }
 
   .Faciities-input input {
-    font-size: 10px;
-    margin-left: 12px;
+    font-size: 0.625rem;
+    margin-left: 0.75rem;
     background: none;
     border: none;
     outline: none;
+    width: 12.5rem;
   }
 
-  .Faciities-input svg {
-    width: 24px;
-    stroke: #000;
+  .Faciities-input button {
     background-color: rgb(255, 255, 255);
-    padding: 4px;
-    margin-right: 5px;
   }
 
-  .Faciities-container input::placeholder {
-    color: #c2bdbd;
-  }
 
-  .Faciities-container button {
-    padding: 8px 24px;
-    border-radius: 50px;
-    border: none;
-    background-color: #211d1d;
-    color: #eee;
-    display: flex;
-    width: 45%;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  .viewall {
+    padding: 0.5rem 0.5rem;
   }
 
   .facilities-sections {
@@ -1528,179 +1186,37 @@ FONT SIZE SYSTEM (px)
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: stretch;
-    gap: 12px;
-    margin-bottom: 64px;
+    gap: 0.75rem;
+    margin-bottom: 4rem;
   }
 
+  .Tennis-court,
+  .Swimming-pool,
+  .basketball-court,
   .Tennis-court {
-    background-image: url(./images/header-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 192px;
-
-    padding: 10px;
-    border-radius: 16px;
-    width: fit-content;
-  }
-
-  .tennis {
-    align-self: flex-end;
-    font-size: 12px;
-  }
-
-  .tennisII {
-    color: white;
-    font-size: 18px;
-  }
-
-  .Swimming-pool {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
-      url(./images/SwimmingPoolUnderVIEW.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 192px;
-
-    width: fit-content;
-    padding: 10px;
-    border-radius: 16px;
-  }
-
-  .swim {
-    align-self: flex-end;
-    font-size: 12px;
+    gap: 15rem;
   }
 
   .swim-bottom {
-    background-color: rgba(136, 180, 203, 0.181);
-    padding: 12px;
-    border-radius: 16px;
-  }
-
-  .heat {
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
-
-  .dive-button {
-    display: flex;
-    width: fit-content;
-    justify-content: space-between;
-  }
-
-  .dive-button p {
-    color: #eee;
-    width: 60%;
-    font-size: 16px;
-  }
-
-  .dive-button button {
-    height: fit-content;
-    padding: 12px 12px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pool {
-    stroke-width: 2;
-    width: 20px;
-  }
-
-  .weightlifting {
-    background-image: url(./images/personDumbbell.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 192px;
-
-    width: fit-content;
-    padding: 10px;
-    border-radius: 16px;
-  }
-
-  .weight {
-    align-self: flex-end;
-    font-size: 12px;
-  }
-
-  .weightII {
-    font-size: 16px;
-    color: #eee;
-  }
-
-  .basketball-court {
-    background-image: url(./images/baskballBasketView.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 192px;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 16px;
-  }
-
-  .basket {
-    align-self: flex-end;
-    font-size: 12px;
-  }
-
-  .basketII {
-    font-size: 16px;
-    color: #eee;
+    padding: 0;
   }
 
   .facilities-icon {
     display: flex;
-    width: 100%;
-    gap: 24px;
+    gap: 3rem;
     justify-content: space-between;
     align-items: center;
   }
 
   .facilities-icon div {
-    width: fit-content;
-  }
-
-  .facilities-icon div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #211d1d;
+    margin-bottom: 0;
   }
 
   .facilities-icon p {
-    width: 30%;
-    font-size: 14px;
+    width: 50%;
   }
 
   /* FOURTH SECTION */
-
-  .fourtI {
-    display: flex;
-    margin-bottom: 32px;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .testimony-hide {
     display: none;
@@ -1708,220 +1224,174 @@ FONT SIZE SYSTEM (px)
 
   .testimony-text {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
   }
 
   .testimony {
+    display: block;
     border-color: #211d1d;
     color: #211d1d;
-    font-size: 14px;
   }
 
   .testimonyI {
-    font-size: 14px;
-    color: #eee;
-    background-color: #211d1d;
-    padding: 8px 12px;
-    border-radius: 100px;
-  }
-
-  .fourtI div svg {
-    background-color: transparent;
-    padding: 12px;
-    width: 44px;
-    stroke: #211d1d;
-    stroke-width: 2;
-    border-radius: 100px;
-    border: 1px solid #211d1d;
+    font-size: 1.25rem;
   }
 
   .testimonial-text-img {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
+    background-image: none;
   }
 
   .fourth-section img {
-    border-radius: 18px;
-    margin-bottom: 12px;
+    border-radius: 1.125rem;
+    margin-bottom: 0.75rem;
     width: 50%;
+    display: block;
+  }
+
+  .testimonial-text-img div {
+    background: none;
   }
 
   .testimonial-text-img blockquote {
-    font-size: 20px;
-    width: 70%;
-    font-family: serif;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    /
   }
 
   .testimonial-author {
-    font-size: 18px;
-  }
-  .testimonial-author span {
-    color: rgb(27, 60, 125);
-    font-weight: 500;
+    font-size: 1.25rem;
   }
 
   /* FIFTH SECTION */
 
   .fifth-section {
-    background-color: #211d1d;
-    padding: 16px;
-    border-radius: 16px;
     display: flex;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .fifth-section img {
-    width: 40%;
-    border-radius: 12px;
+    width: 50%;
+    margin-bottom: 0;
   }
 
   .subscribe-newsletter {
-    margin: 24px 0;
-  }
-
-  .subscribe-button {
-    padding: 8px 16px;
-    color: #eee;
-    background-color: #211d1d;
-    border-radius: 50px;
-    border: 1px solid #eee;
-    margin-right: 12px;
-  }
-
-  .newsletter {
-    padding: 8px 16px;
-    color: #211d1d;
-    background-color: #eee;
-    border-radius: 50px;
-    border: none;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
   }
 
   .subscribe-text {
-    font-size: 36px;
-    margin-bottom: 12px;
-    color: #eee;
-    font-weight: 100;
-    margin-bottom: 24px;
-  }
-
-  .subscribe-input {
-    padding: 4px 12px;
-    border-radius: 50px;
-    background-color: rgba(235, 220, 220, 0.099);
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .subscribe-input input {
-    border: none;
-    background: none;
-    outline: none;
-    width: 50%;
-  }
-  .subscribe-input input::placeholder {
-    color: #cebebe;
-  }
-
-  .send-icon {
-    width: 26px;
-    stroke: none;
-    fill: #eee;
-    background-color: rgb(115, 182, 211);
-    border-radius: 100px;
-    padding: 3px;
+    margin-bottom: 3rem;
   }
 
   /* FOOTER */
 
   footer {
-    background-color: rgb(115, 182, 211);
-    padding-top: 32px;
-    width: 100%;
-  }
-
-  footer section {
-    margin-bottom: 0;
+    padding-top: 2rem;
   }
 
   .footer_top-section {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(33, 29, 29, 0.386);
-    padding-bottom: 32px;
-    gap: 24px;
+    border-bottom: 0.0625rem solid rgba(33, 29, 29, 0.386);
+    padding-bottom: 2rem;
+    gap: 1.5rem;
   }
 
   .advert-text {
-    font-size: 24px;
-    color: #211d1d;
-    width: 100%;
-    margin-bottom: 24px;
-    width: 70%;
+    font-size: 2.25rem;
   }
 
   .footer-Louvre {
-    padding: 4px 12px;
+    font-size: 1.125rem;
+  }
+
+  .page-details {
+    gap: 4rem;
+  }
+
+  .privacy-policy,
+  .Copyright {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media (max-width: 23.125rem) {
+  .golf-text {
+    font-size: 0.625rem;
+  }
+
+  .football-container-sectionI {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .football-container-sectionI span {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .football-container-sectionI div {
+    display: block;
+    text-align: center;
+  }
+
+  .training {
+    margin: 0.75rem 0;
+  }
+
+  .fourtI {
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .fourtI div {
+    margin-bottom: 1.5rem;
+  }
+
+  .testimony-hide {
+    border-color: #211d1d;
     color: #211d1d;
-    background-color: #eee;
-    border-radius: 50px;
-    border: none;
-    width: fit-content;
-    font-size: 12px;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .fourtI p {
+    font-size: 1.125rem;
+  }
+
+  .fourtI div button {
+    padding: 0.75rem 0.25rem;
   }
 
   .page-details {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 40%;
-    gap: 32px;
-  }
-
-  ul {
-    list-style: none;
-    color: #211d1d;
-  }
-
-  .page-details p {
-    font-size: 16px;
-    color: #211d1d;
-    margin-bottom: 12px;
-  }
-
-  .page-details li {
-    font-size: 12px;
-    margin-bottom: 8px;
-  }
-
-  .page-details li:last-child {
-    margin-bottom: 0;
-  }
-
-  .social a:link,
-  a:visited {
-    color: #211d1d;
-    text-decoration: none;
+    gap: 2rem;
   }
 
   .social li {
-    background-color: transparent;
-    border: 1px solid #716464;
-    border-radius: 50px;
-    padding: 4px 12px;
+    width: fit-content;
   }
 
   .footer_bottom-section {
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 12px;
-    font-size: 14px;
-    color: #211d1d;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 17.5625rem) {
+  header,
+  main {
+    width: fit-content;
   }
 }
